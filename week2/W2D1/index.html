@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--this is a comment in HTML-->
+    <!--<head> loads first, tells browser info about how to interpret our page-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="T PHILLIPS">
+    <meta name="description" content="W2D1 Demo">
+
+    <title>W#2 | Demo #1</title>
+</head>
+<body>
+    <p>Take us back to the <a href="#w2">bottom</a> of the page</p>
+    <!--the <body> element holds ALL CONTENT FOR THE PAGE-->
+    <!--thre should only ever be ONE <head> and ONE <body>-->
+
+    <!--Block Level Elements: Building blocks of page! create main structure (both organizational and content-wise)-->
+    <!--headings [1-6] are just like heading styles in Word-->
+    <h1 id="top" style="border:1px solid red">Heading 1</h1> <!--ONLY ONE PER PAGE for SEO (search engine optimization)-->
+    <h2 style="border:1px solid green">Heading 2</h2>
+    <h3 style="border:1px solid blue">Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    
+    <!--HORIZONTAL RULE <hr> : creates seperation between sections of page-->
+    <hr>
+
+    <!--DIVs are dividers/division - they do not contain "content", they contain and help orgainze other HTML elements-->
+    <div style="background-color:black; color:white;">
+        <h2 id="list">List Type in HTML</h2>
+
+        <!--ordered list-->
+        <ol>
+            <!--add a list item for each line item in the list-->
+            <li>Snowboarding</li>
+            <li>Going to the gym</li>
+            <li>Videogames</li>
+        </ol>
+
+        <!--Unordered list-->
+        <ul>
+            <!--add a list item for each line item in the list-->
+            <li>Drogon</li>
+            <li>Rhaegal</li>
+            <li>Viserion</li>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <h2>Basic Paragraph text + In-Line Tags</h2>
+
+    <!--in-line elements do NOT create structure, the are used *in line* of annother HTML element! they usually add visual style or emphasis, help support SEO, or support data management-->
+
+    <!--<p> for paragraph (block level element)-->
+    <p>
+        Hello my name is <b>Katie</b> and have
+        <br><!--break space - creates a new empty line--> 
+        <i>two</i> dogs (George <u>&</u> Marlowe) 
+        <br><br>
+        and a cat named Stevie!
+    </p>
+
+    <!--in line for SEO support-->
+    <p>The <strong>strong</strong> tag makes content appear bold.</p>
+    <p>The <em>emphasis</em> tag makes content appear italicized.</p>
+
+    <p><b><i><u>C O M B O</u></i></b></p>
+
+    <hr>
+    <!--continuing into week 2 with basic tags-->
+    <h2 id="w2">W2D1 - Intro to img, a, and id attributes</h2>
+
+    <!--add a link to neit.edu-->
+    <!--this is an examle of an ABSOLUTE path (starts with protocol)-->
+
+    <h4>Check out my school's website: <a href="https://www.neit.edu" target="_blank">neit.edu</a></h4>
+    <!--target="_blank" opens the link in a new tab-->
+
+    <!--link to our W1 demo webpage-->
+    <!--since this week2 folder liveswithin a larger "se111" folder, we can create RELATIVE paths to other content housed within "SE111_202530"-->
+    <p>My first HTML demo can be found <a href="../../week1/demo/index.html" target="_blank">here</a> for your review</p>
+
+    <!--in page "jump" link below; utilizes #idValue-->
+    <p>Take us back to the <a href="#top">top</a> of the page</p>
+    <p>Take us back to the <a href="#list">lists</a> of the page</p>
+
+    <hr>
+
+    <h2>Images!</h2>
+
+    <!--it is always safest tot use RELATIVE file paths with our image content (these are resources taht live directly in our website's root folder)-->
+    <img src="images/meca.jpg" alt="The front entrance of MECA's Porteous Building" width="500px" title="MECA!">
+    <!--<br> Break allows images to rest vertically without having the image move next to the other when the page is fullscreened-->
+    <br>
+    <img src="images/stormsEnd.jpg" alt="Storms End" width="500px">
+    <!--avoid ABSOLUTE image paths (we lose control!)-->
+
+</body>
+</html>
