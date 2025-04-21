@@ -11,21 +11,69 @@
 
     <style>
 
-        div {
-            border:1px solid rgb(151, 173, 173);
+        body { 
+            background-color:rgb(73, 73, 73);
+            background-image:url('images/seamlessSpace.png');
+        }
+
+        #container {
+            background-color:white;
+            color:black;
+
+            width:800px;
+            margin:auto;
+
+            padding:10px; 
+        }
+
+        #nav {
+            border:2px solid black;
             padding:10px;
             margin:10px;
+
+            border-radius:10px;
+
+            box-shadow:5px 5px 10px black;
         }
 
-        h1, h2, a, img {
-            border:1px solid rgb(0, 0, 0);
+        #buttons {
+            border:1px solid gray;
+            height:50px;
+
+            width:510px;
+            margin:auto;
         }
 
-        #main-content {
-            margin:0;
+        .nav-btn {
+            width:150px;
+            height:50px;
+
+            text-align:center;
+            line-height:50px; 
+
+            background-color:gray;
+
+            float:left;
+            display:block;
+
+            margin-right:10px;
+            margin-left:10px;
+
+            text-decoration:none;
+
+            font-size:24px;
+            font-family:Arial, Helvetica, sans-serif;
+
+
+        }
+
+        .nav-btn:hover {
+            background-color:blue;
+            color:gray;
         }
 
     </style>
+
 
 </head>
 <body>
@@ -41,9 +89,15 @@
 
         <!--#NAV-->
         <div id="nav">
-            <a href="index.html" class="nav-btn">HOME</a>
-            <a href="cast.html" class="nav-btn">CAST</a>
-            <a href="review.html" class="nav-btn">REVIEW</a>
+
+            <div id="buttons">
+
+                <a href="index.html" class="nav-btn">HOME</a>
+                <a href="cast.html" class="nav-btn">CAST</a>
+                <a href="review.html" class="nav-btn">REVIEW</a>
+
+            </div> <!--/#buttons-->
+
         </div><!--/#nav-->
 
         <hr>
@@ -55,22 +109,22 @@
             <div id="main-content">
             <!--<p>A <i>brief</i> 1-2 sentance summary of your <em>media choice.</em>-->
                 <p>
-
+                    Interstellar is a science fiction film set in a dystopian future where Earth is suffering from catastrophic blight and famine. A group of astronauts, led by ex-NASA pilot Joseph Cooper, travels through a wormhole near Saturn in search of a new home for mankind.
                 </p>
-                <img src="" alt="">
+                <img src="images/poster.jpg" alt="Interstellar Movie Poster" style="width:500px; height:auto">
             
                 <div class="info">
 
                     <P>
-                        <b>Company Credits:</b>
+                        <b>Company Credits:</b> Paramount Pictures, Warner Bros.
                         <br>
-                        <b>Release Date:</b>
+                        <b>Release Date:</b> November 7, 2014
                         <br>
-                        <b>Genres: </b>
+                        <b>Genres:</b> Drama, Adventure, Sci-Fi
                         <br>
-                        <b>Rating:</b>
+                        <b>Rating:</b> PG-13
                         <br>
-                        <b>Running Time:</b>
+                        <b>Running Time:</b> 169 min
                     </P>
 
                 </div><!--/.info-->
@@ -83,7 +137,7 @@
         <!--#FOOTER-->
         <div id="footer">
             <a href="#container">Back to Top</a> <br>
-            <a href="">Validation Screenshot</a>
+            <a href="images/IndexValid.png" target="_blank">Validation Screenshot</a>
         </div><!--/#footer-->
 
     </div><!--/#container-->
