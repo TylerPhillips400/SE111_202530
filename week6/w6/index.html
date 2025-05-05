@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="TPhillips">
+    <meta name="description" content="W6D1 - Intro to JS">
+    <title>W6 | Pay Calculator</title>
+</head>
+<body>
+    <h1>Week 6| Javascript Pay Calculator</h1>
+
+    <script>
+
+        var hourlyPay = Number(prompt(`What is your hourly rate?: `))
+        var hoursWorked = Number(prompt(`How many hours did you work in 2 weeks?: `))
+        var taxRate = .2
+
+        var grossPay = hourlyPay * hoursWorked
+        var uncleSamsShare = grossPay * taxRate
+        var netPay = grossPay - uncleSamsShare
+
+        alert(`Gross Pay: $${grossPay.toFixed(2)}\nUncle Sam's Share: $${uncleSamsShare.toFixed(2)}\nNet Pay: $${netPay.toFixed(2)}`)
+
+        console.log(`Gross Pay: $${grossPay.toFixed(2)}`)
+        console.log(`Uncle Sam's Share: $${uncleSamsShare.toFixed(2)}`)            
+        console.log(`Net Pay: $${netPay.toFixed(2)}`)    
+
+
+    </script>
+    
+</body>
+</html>
