@@ -116,8 +116,8 @@
 
 
             //convert both hours and rate to Number() data types
-            Number(hours)
-            Number(rate)
+            hours = Number(hours)
+            rate = Number(rate)
 
 
             //NOTE: DO NOT MOVE ON UNTIL YOU ARE ABLE TO DISPLAY THE CORRECT VALUES! This is a practice in testing as you build! 
@@ -137,7 +137,7 @@
 
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
-            var finalMessage = `${full}<br>HOURS WORKED: ${hours}<br>HOURLY RATE: $${Number(rate).toFixed(2)}`
+            var finalMessage = `${full}<br>HOURS WORKED: ${hours}<br>HOURLY RATE: $${rate.toFixed(2)}`
 
         
             //create a new var called 'info' and store the entire #info *HTML element* to it
@@ -166,7 +166,7 @@
                     *if written correctly, you will see an alert() with all info entered as well as processed!*/
 
 
-                alert(`${full}\nHOURS: ${hours}\nRATE: $${Number(rate).toFixed(2)}\n\nGROSS PAY: $${Number(grossPay).toFixed(2)}\nTAX AMOUNT: $${Number(uncleSamsShare).toFixed(2)}\nNET PAY: $${Number(netPay).toFixed(2)}`)
+                alert(`${full}\nHOURS: ${hours}\nRATE: $${rate.toFixed(2)}\n\nGROSS PAY: $${grossPay.toFixed(2)}\nTAX AMOUNT: $${uncleSamsShare.toFixed(2)}\nNET PAY: $${netPay.toFixed(2)}`)
             }
             
         }
